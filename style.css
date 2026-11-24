@@ -521,6 +521,39 @@ article .icon {
   border-color: rgb(163, 163, 163);
 }
 
+.project-placeholder {
+  width: 90%;
+  height: 100%;
+  border-radius: 1.5rem;
+  background: linear-gradient(135deg, #252628, #444548);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0.5rem;
+  color: white;
+}
+
+.project-placeholder-title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  letter-spacing: 0.15rem;
+  color: #b3262d;
+}
+
+.project-placeholder-subtitle {
+  font-size: 1rem;
+  letter-spacing: 0.25rem;
+  color: white;
+}
+
+.project-status {
+  font-size: 0.85rem;
+  font-style: italic;
+  color: #777;
+  margin: -0.5rem 0 1rem;
+}
+
 /* CONTACT SECTION */
 
 /* CONTACT LINKS LAYOUT */
