@@ -194,7 +194,15 @@ section {
 #socials-container {
   display: flex;
   justify-content: center;
-  margin-top: 1rem;
+  align-items: center;
+  margin-top: 0;
+  gap: 1rem;
+}
+
+.profile-actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 1rem;
 }
 
@@ -251,13 +259,33 @@ section {
 
 /* ABOUT SECTION */
 
+/* ABOUT SECTION HEADING */
+
+#about > .title {
+  text-align: left;
+  align-self: flex-start;
+  width: fit-content;
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+#about > .title::after {
+  content: "";
+  display: block;
+  width: 65px;
+  height: 4px;
+  background-color: rgb(53, 53, 53);
+  border-radius: 3px;
+  margin-top: 0.5rem;
+}
+
 #about {
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   height: auto;
-  padding-bottom: 6rem;
+  padding-bottom: 2rem;
 }
 
 .about-containers {
@@ -300,8 +328,28 @@ section {
   text-align: center;
 }
 
+/* ABOUT EXPERIENCE - CLEAN STYLE */
+
 #about .details-container {
   flex: 0 1 26rem;
+  background: transparent;
+  border: none;
+  border-radius: 0;
+  box-shadow: none;
+  padding: 0;
+  text-align: left;
+}
+
+/* ALIGN ABOUT CONTENT */
+
+#about .about-details-container {
+  align-items: flex-start;
+}
+
+#about .about-containers {
+  justify-content: flex-start;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 /* EDUCATION TIMELINE */
@@ -312,7 +360,20 @@ section {
 
 .education-title {
   font-size: 2rem;
+  text-align: left;
+  width: fit-content;
   margin-bottom: 2rem;
+  position: relative;
+}
+
+.education-title::after {
+  content: "";
+  display: block;
+  width: 65px;
+  height: 4px;
+  background-color: rgb(53, 53, 53);
+  border-radius: 3px;
+  margin-top: 0.5rem;
 }
 
 .timeline-header {
@@ -462,6 +523,20 @@ article .icon {
 
 /* CONTACT SECTION */
 
+/* CONTACT LINKS LAYOUT */
+
+.contact-links-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.5rem;
+  width: 100%;
+}
+
+.contact-links-container .contact-info-container {
+  margin: 0.5rem;
+}
+
 #contact {
   display: flex;
   justify-content: center;
@@ -546,4 +621,27 @@ footer {
 
 footer p {
   text-align: center;
+}
+
+/* SCROLL REVEAL ANIMATIONS */
+.reveal-enabled .reveal {
+  opacity: 0;
+  transform: translateY(35px);
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
+}
+
+.reveal-enabled .reveal.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .reveal-enabled .reveal,
+  .reveal-enabled .reveal.active {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
 }

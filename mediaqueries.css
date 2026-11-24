@@ -56,6 +56,27 @@
 }
 
 @media screen and (max-width: 600px) {
+  .contact-links-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    width: 100%;
+  }
+
+  .contact-links-container .contact-info-container {
+    display: flex;
+    align-items: center;
+    gap: 0.25rem;
+    margin: 0.25rem 0;
+    min-width: 0;
+  }
+
+  .contact-links-container .contact-info-container p {
+    font-size: 0.75rem;
+  }
   #contact,
   footer {
     height: fit-content;
@@ -109,5 +130,125 @@
   }
   .text-container {
     text-align: left;
+  }
+  #profile .section__pic-container {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 1.5rem;
+  }
+
+  .section__pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  html,
+  body {
+    max-width: 100%;
+    overflow-x: hidden;
+  }
+  /* MOBILE PROFILE - SIDE BY SIDE LAYOUT */
+
+  #profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    height: auto;
+    padding-top: 0.5rem;
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+
+  #profile .section__pic-container {
+    flex: 0 0 clamp(150px, 48%, 190px);
+    width: 48%;
+    max-width: 190px;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    margin: 0;
+  }
+
+  #profile .section__pic {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  #profile .section__text {
+    flex: 1;
+    min-width: 0;
+    text-align: left;
+  }
+
+  #profile .section__text__p1 {
+    font-size: 0.85rem;
+  }
+
+  #profile .title {
+    font-size: 1.5rem;
+    text-align: left;
+  }
+
+  #profile .section__text__p2 {
+    font-size: 1rem;
+    text-align: left;
+    margin-bottom: 0.8rem;
+  }
+
+  /* PROFILE BUTTONS */
+
+  #profile .profile-actions {
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    gap: 0.5rem;
+  }
+
+  #profile .profile-actions .btn {
+    width: auto;
+    padding: 0.65rem 0.8rem;
+    font-size: 0.75rem;
+    white-space: nowrap;
+  }
+
+  #profile #socials-container {
+    margin-top: 0;
+  }
+
+  #profile #socials-container .icon {
+    height: 1.6rem;
+  }
+  /* REDUCE MOBILE HEADER SPACING */
+
+  #hamburger-nav {
+    height: 65px;
+    min-height: 65px;
+  }
+
+  #profile {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    height: auto;
+    min-height: 0;
+    padding-top: 0 !important;
+    margin-top: 0;
+    margin-bottom: 2rem;
+
+    gap: 1rem;
+  }
+
+  /* ABOUT SECTION MOBILE SPACING */
+
+  #about .about-details-container {
+    gap: 0.75rem;
+  }
+
+  #about .about-containers {
+    margin-bottom: 0;
   }
 }

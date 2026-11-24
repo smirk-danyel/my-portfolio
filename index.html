@@ -47,27 +47,23 @@
         <p class="section__text__p1">Hello, I'm</p>
         <h1 class="title">Daniel Isindu</h1>
         <p class="section__text__p2">Fullstack Developer</p>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-1"
-            onclick="location.href = './#contact'"
-          >
-            Contact Info
-          </button>
-        </div>
-        <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn Profile"
-            class="icon"
-            onclick="
-              window.open(
-                'https://www.linkedin.com/in/daniel-innocent-57b9a0386',
-                '_blank',
-              )
-            "
-          />
-        </div>
+<div class="btn-container profile-actions">
+  <button
+    class="btn btn-color-1"
+    onclick="location.href = './#contact'"
+  >
+    Contact Info
+  </button>
+
+  <div id="socials-container">
+    <img
+      src="./assets/linkedin.png"
+      alt="My LinkedIn Profile"
+      class="icon"
+      onclick="window.open('https://www.linkedin.com/in/daniel-innocent-57b9a0386', '_blank')"
+    />
+  </div>
+</div>
       </div>
     </section>
     <section id="about">
@@ -381,40 +377,37 @@
     </section>
     <section id="contact">
       <h1 class="title">Contact Me</h1>
-      <div class="contact-info-upper-container">
-        <form id="contact-form" class="contact-form">
-    <input type="text" name="name" placeholder="Your Name" aria-label="Your Name" required />
-    <input type="email" name="email" placeholder="Your Email" aria-label="Your Email" required />
-    <textarea name="message" rows="7" placeholder="Your Message" aria-label="Your Message" required></textarea>
-    <button type="submit" class="btn btn-color-1 send-btn">Send Message</button>
-</form>
-        <div class="contact-info-container">
-          <img
-            src="./assets/email.png"
-            alt="Email icon"
-            class="icon contact-icon email-icon"
-          />
-          <p>
-            <a href="mailto:innocentdannie777@gmail.com"
-              >innocentdannie777@gmail.com</a
-            >
-          </p>
-        </div>
-        <div class="contact-info-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="LinkedIn icon"
-            class="icon contact-icon"
-          />
-          <p>
-            <a
-              href="https://www.linkedin.com/in/daniel-innocent-57b9a0386"
-              target="_blank"
-              >LinkedIn</a
-            >
-          </p>
-        </div>
-      </div>
+      <div class="contact-links-container">
+
+  <div class="contact-info-container">
+    <img
+      src="./assets/email.png"
+      alt="Email icon"
+      class="icon contact-icon email-icon"
+    />
+    <p>
+      <a href="mailto:innocentdannie777@gmail.com">
+        innocentdannie777@gmail.com
+      </a>
+    </p>
+  </div>
+
+  <div class="contact-info-container">
+    <img
+      src="./assets/linkedin.png"
+      alt="LinkedIn icon"
+      class="icon contact-icon"
+    />
+    <p>
+      <a
+        href="https://www.linkedin.com/in/daniel-innocent-57b9a0386"
+        target="_blank"
+        rel="noopener noreferrer"
+      >LinkedIn</a>
+    </p>
+  </div>
+
+</div>
     </section>
     <footer>
       <nav>
